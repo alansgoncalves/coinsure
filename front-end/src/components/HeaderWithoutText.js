@@ -1,5 +1,6 @@
 import React from 'react';
 import "../style/App.css";
+import { Link } from 'react-router-dom';
 
 function HeaderWithoutText() {
   return (
@@ -11,7 +12,9 @@ function HeaderWithoutText() {
               <h3>Vekio</h3>
             </div>
             <nav className="item-menu">
-              <a href="/">Voltar</a>
+            <Link to={"/"}>
+              <button >Voltar</button>
+              </Link>
             </nav>
           </div>
         </div>

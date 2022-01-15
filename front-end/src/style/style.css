@@ -1,6 +1,7 @@
 .user-login {
   width: 400px;
   margin: 0 auto;
+  font-family: monospace;
 }
 
 .user-login__title {
@@ -30,9 +31,10 @@
 }
 
 .user-login__submit-button {
-  width: 100%;
+  width: 50%;
   margin-top: 30px;
   margin-bottom: 30px;
+  margin-left: 100px;
 }
 
 .titulo {
@@ -49,4 +51,47 @@
   font-size: 18px;
   max-width: 400px;
   margin-top: 40px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-top: 30px;
+  font-family: monospace;
+}
+
+
+.register-form label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555555;
+}
+
+
+.register-form input {
+  border: 1px solid #AAAAAA;
+  border-radius: 8px;
+  background-color: #fff;
+  height: 36px;
+  padding: 0 10px;
+  width: 20%;
+}
+.register-title {
+  text-align: center;
+  font-family: monospace;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.register-h2 {
+  font-family: monospace;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.button {
+  margin-left: 10px;
 }

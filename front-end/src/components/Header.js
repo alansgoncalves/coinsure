@@ -1,5 +1,6 @@
-import React from 'react';
+import React from "react";
 import "../style/App.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -11,8 +12,12 @@ function Header() {
               <h3>Vekio</h3>
             </div>
             <nav className="item-menu">
-              <a href="/cadastro">Cadastre-se</a>
-              <a href="/login">Login</a>
+              <Link to={"/cadastro"}>
+                <button>Cadastre-se</button>
+              </Link>
+              <Link to={"/login"}>
+                <button>Login</button>
+              </Link>
             </nav>
           </div>
         </div>

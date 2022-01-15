@@ -1,4 +1,3 @@
-// import React, { useState } from "react";
 import "../style/style.css";
 import HeaderWithoutText from '../components/HeaderWithoutText'
 
@@ -37,9 +36,8 @@ const UserRegister = () => {
           type="submit"
           theme="contained-green"
           className="user-login__submit-button"
-          rounded
         >
-          Cadastro
+          Registro
         </button>
       </form>
       </div>

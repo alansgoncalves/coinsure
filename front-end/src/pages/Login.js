@@ -28,7 +28,6 @@ const UserLogin = () => {
           type="submit"
           theme="contained-green"
           className="user-login__submit-button"
-          rounded
         >
           Entrar
         </button>
