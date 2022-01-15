@@ -9,6 +9,16 @@ const createUser = async ({ fullname, email, password }) => {
   return { token };
 };
 
+const userLogin = async ({ email, password }) => {
+  await User.findOne({ where: { email } });
+
+  const token = JWT({ email, password });
+  
+  return { token };
+};
+
+
 module.exports = {
-  createUser
+  createUser,
+  userLogin
 }

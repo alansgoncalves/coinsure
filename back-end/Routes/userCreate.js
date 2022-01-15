@@ -1,8 +1,8 @@
 const { Router } = require('express');
 const controller = require('../controllers/userController');
-const { validateEmail } = require('../middlewares/validEmail');
-const { validateFullname } = require('../middlewares/validFullname');
-const { validatePassword } = require('../middlewares/validPassword');
+const { validateEmail } = require('../middlewares/user/validEmail');
+const { validateFullname } = require('../middlewares/user/validFullname');
+const { validatePassword } = require('../middlewares/user/validPassword');
 
 const router = Router();
 
