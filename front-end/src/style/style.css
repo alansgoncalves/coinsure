@@ -34,3 +34,19 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+.titulo {
+  font-size: 5em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.text {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin: auto;
+  font-size: 18px;
+  max-width: 400px;
+  margin-top: 40px;
+}
