@@ -1,22 +1,7 @@
-// import React, { useState } from "react";
 import "../style/style.css";
 import HeaderWithoutText from '../components/HeaderWithoutText'
 
-// function initialState() {
-//   return { user: "", password: "" };
-// }
-
-const UserLogin = (props) => {
-  // const [values, setValues] = useState(initialState);
-
-  // function onChange(event) {
-  //   const { value, name } = event.target;
-
-  //   setValues({
-  //     ...values,
-  //     [name]: value,
-  //   });
-  // }
+const UserLogin = () => {
   return (
     <div>
       <HeaderWithoutText />
@@ -29,8 +14,6 @@ const UserLogin = (props) => {
             id="email"
             type="text"
             name="email"
-            // onChange={onChange}
-            // value={values.user}
           />
         </div>
         <div className="user-login__form-control">
@@ -39,8 +22,6 @@ const UserLogin = (props) => {
             id="password"
             type="password"
             name="password"
-            // onChange={onChange}
-            // value={values.password}
           />
         </div>
         <button
