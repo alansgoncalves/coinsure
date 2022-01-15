@@ -1,22 +1,12 @@
-import React, { useState } from "react";
-
-function initialState() {
-  return { user: "", password: "" };
-}
+// import React, { useState } from "react";
+import "../style/style.css";
+import HeaderWithoutText from '../components/HeaderWithoutText'
 
 const UserRegister = () => {
-  const [values, setValues] = useState(initialState);
-
-  function onChange(event) {
-    const { value, name } = event.target;
-
-    setValues({
-      ...values,
-      [name]: value,
-    });
-  }
   return (
-    <div className="user-login">
+    <div>
+      <HeaderWithoutText />
+      <div className="user-login">
       <h1 className="user-login__title">Cadastro</h1>
       <form autoComplete="nope">
         <div className="user-login__form-control">
@@ -25,8 +15,6 @@ const UserRegister = () => {
             id="email"
             type="text"
             name="email"
-            onChange={onChange}
-            value={values.user}
           />
         </div>
         <div className="user-login__form-control">
@@ -35,8 +23,6 @@ const UserRegister = () => {
             id="password"
             type="password"
             name="password"
-            onChange={onChange}
-            value={values.password}
           />
         </div>
         <button
@@ -45,9 +31,10 @@ const UserRegister = () => {
           className="user-login__submit-button"
           rounded
         >
-          Entrar
+          Cadastro
         </button>
       </form>
+      </div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import "../App.css";
 
-function Header() {
+function HeaderWithoutText() {
   return (
     <header className="App">
       <div className="main">
@@ -11,8 +11,7 @@ function Header() {
               <h3>Vekio</h3>
             </div>
             <nav className="item-menu">
-              <a href="/cadastro">Cadastre-se</a>
-              <a href="/login">Login</a>
+              <a href="/">Voltar</a>
             </nav>
           </div>
         </div>
@@ -21,4 +20,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default HeaderWithoutText;
