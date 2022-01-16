@@ -23,7 +23,7 @@ const ProductRegister = () => {
       </div>
       <div className="register-form">
         <label htmlFor="image">Imagem do Produto</label>
-        <input id="image" name="image" type="file" /> <br /><br />
+        <input id="image" name="image" type="file" /> <br />
       </div>
       <div className="button">
         <button type="submit">Salvar</button>

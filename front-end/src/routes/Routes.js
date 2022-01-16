@@ -12,7 +12,7 @@ function Rotas() {
         <Route exact path="/" element={<Home /> }/>
         <Route $comingsoon={""} exact path="/cadastro" element={<UserRegister />}/>
         <Route $comingsoon={""} exact path="/login" element={<Login />}/>
-        <Route $comingsoon={""} exact path="/product" element={<ProductRegister />}/>
+        <Route $comingsoon={""} exact path="/produto" element={<ProductRegister />}/>
       </Routes>
     </BrowserRouter>
   );
