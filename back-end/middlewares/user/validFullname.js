@@ -1,8 +1,8 @@
 const code = require('../../helpers/statusCode');
 
 const validateFullname = (req, res, next) => {
-  const { fullname } = req.body;
-  if (!fullname) {
+  const { fullName } = req.body;
+  if (!fullName) {
   return res.status(code.BAD_REQUEST)
   .json({ message: '"Nome Completo" ldeve ser informado' });
   }

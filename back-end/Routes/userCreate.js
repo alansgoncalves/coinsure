@@ -6,6 +6,6 @@ const { validatePassword } = require('../middlewares/user/validPassword');
 
 const router = Router();
 
-router.post('/cadastro', validateFullname, validateEmail, validatePassword, controller.createUser);
+router.post('/', validateFullname, validatePassword, validateEmail, controller.createUser);
 
 module.exports = router
