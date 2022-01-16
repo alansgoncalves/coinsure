@@ -1,7 +1,13 @@
 import "../style/style.css";
 import HeaderWithoutText from '../components/HeaderWithoutText'
+import { useState } from "react";
 
 const UserRegister = () => {
+
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
   return (
     <div>
       <HeaderWithoutText />
@@ -14,6 +20,9 @@ const UserRegister = () => {
             id="fullName"
             type="text"
             name="fullName"
+            onChange={(e) => {
+              setFullName(e.target.value)
+            }}
           />
         </div>
         <div className="user-login__form-control">
@@ -22,6 +31,9 @@ const UserRegister = () => {
             id="email"
             type="text"
             name="email"
+            onChange={(e) => {
+              setEmail(e.target.value)
+            }}
           />
         </div>
         <div className="user-login__form-control">
@@ -30,6 +42,9 @@ const UserRegister = () => {
             id="password"
             type="password"
             name="password"
+            onChange={(e) => {
+              setPassword(e.target.value)
+            }}
           />
         </div>
         <button
