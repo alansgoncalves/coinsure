@@ -16,7 +16,6 @@ const userLogin = async (req, res) => {
   return res.status(statusCode.OK).json(token);
 };
 
-
 module.exports = {
   createUser,
   userLogin,

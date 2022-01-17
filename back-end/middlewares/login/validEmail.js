@@ -28,6 +28,13 @@ const validateEmail = async (req, res, next) => {
   next();
 };
 
+const userRegistered = async (req, res, next) => {
+  const { email } = req.body;
+  const userExists = await User.findOne({ where: { email } });
+  if(userExists) return res.status(code.OK).json(userExists);
+}
+
 module.exports = {
   validateEmail,
+  userRegistered,
 };
