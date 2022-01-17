@@ -26,6 +26,10 @@ const UserRegister = () => {
       alert('Informar um e-mail válido')
       return
     }
+    if(password.length === 0) {
+      alert('Informar uma senha!')
+      return
+    }
     submitRegister()
   }
 
