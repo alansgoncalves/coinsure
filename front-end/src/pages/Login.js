@@ -16,7 +16,7 @@ const UserLogin = () => {
       alert('Login realizado com sucesso!'))
   };
 
-  const validEmailPassword = () => {
+  const validEmailPassword = (props) => {
     if(email.length === 0) {
       alert('Informar e-mail!')
       return
